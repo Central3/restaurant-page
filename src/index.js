@@ -1,1 +1,3 @@
-console.log("hello from script");
+import home from "./home";
+
+home();
