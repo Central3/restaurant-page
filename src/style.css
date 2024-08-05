@@ -8,8 +8,8 @@
 }
 
 @font-face {
-    font-family: 'valentine';
-    src: url("Valentine.ttf") format('truetype');
+    font-family: "valentine";
+    src: url("Valentine.ttf") format("truetype");
 }
 
 header {
@@ -29,16 +29,16 @@ header button {
     border-bottom: 2px solid transparent;
     position: relative;
     box-sizing: border-box;
-    font-family: 'valentine-cute';
+    font-family: "valentine-cute";
 }
 
 header button::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     right: 50%;
-    background-color: #E9C46A;
+    background-color: #e9c46a;
     height: 2px;
     transition: all 0.3s ease;
 }
@@ -59,7 +59,6 @@ header button:hover {
 .hero {
     border-radius: 24px;
     background: url("pasta.jpg") no-repeat center;
-    background-image: url("pasta.jpg");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -71,7 +70,7 @@ header button:hover {
 }
 
 .hero::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -88,7 +87,7 @@ header button:hover {
     position: relative;
     font-size: 10rem;
     font-family: valentine;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
 }
 
 .restaurant-info {
@@ -107,11 +106,43 @@ header button:hover {
 }
 
 .restaurant-info button:hover {
-    background-color: #E9C46A;
+    background-color: #e9c46a;
     cursor: pointer;
 }
 
 .restaurant-info p {
     color: #333;
     font-size: 1.3rem;
+}
+
+.menus-container {
+    display: flex;
+    padding: 4px 8rem;
+    margin-top: 16px;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.menus-container > div {
+    flex-grow: 1;
+}
+
+.menus-container h1 {
+    font-family: valentine;
+    border-bottom: 1px solid #333;
+    font-size: 3rem;
+    color: #000;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.menus-container h3 {
+    font-size: 1.5rem;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.menus-container p {
+    text-wrap: wrap;
+    font-family: "Courier New", Courier, monospace;
+    /* font-family: sans-serif; */
 }

@@ -1,4 +1,5 @@
 import "./style.css";
+import menus from "./menu";
 
 function createElement(tag, className, content) {
     const element = document.createElement(tag);
@@ -12,7 +13,7 @@ export default function component() {
     const content = document.querySelector("#content");
     const heroContainer = createElement("div", "hero-container");
     const hero = createElement("div", "hero");
-    const restaurantTitle = createElement("h1", "", "Vino e Pasta");
+    const restaurantTitle = createElement("h1", "", "Pasta La Vista");
     const main = createElement("main", "restaurant-info");
     const infoHeading = createElement("h1", "", "Welcome");
     const infoPara = createElement(
@@ -29,4 +30,9 @@ export default function component() {
     main.appendChild(infoHeading);
     main.appendChild(infoPara);
     main.appendChild(infoBtn);
+
+    infoBtn.addEventListener("click", () => {
+        content.innerHTML = "";
+        menus();
+    })
 }
