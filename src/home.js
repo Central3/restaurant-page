@@ -34,5 +34,5 @@ export default function component() {
     infoBtn.addEventListener("click", () => {
         content.innerHTML = "";
         menus();
-    })
+    });
 }

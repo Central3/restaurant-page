@@ -94,6 +94,8 @@ header button:hover {
     text-align: center;
     padding: 4px 16px;
     margin: 16px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
 }
 
 .restaurant-info button {
@@ -138,11 +140,32 @@ header button:hover {
 
 .menus-container h3 {
     font-size: 1.5rem;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
 }
 
 .menus-container p {
     text-wrap: wrap;
-    font-family: "Courier New", Courier, monospace;
-    /* font-family: sans-serif; */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+.page-title {
+    font-family: valentine;
+    font-size: 10rem;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.about-content {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
 }

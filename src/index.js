@@ -1,5 +1,6 @@
 import home from "./home";
 import menus from "./menu";
+import about from "./about";
 
 const content = document.querySelector("#content");
 const navbar = document.querySelector("nav");
@@ -14,6 +15,7 @@ navbar.addEventListener("click", (event) => {
             menus();
         } else if (event.target.id === "about") {
             content.innerHTML = "";
+            about();
         }
     }
 });
